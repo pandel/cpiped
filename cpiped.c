@@ -125,7 +125,8 @@ int main(int argc, char *argv[]) {
       break;
     case 's':
       strcpy(startcmd, optarg);
-      if (stat(startcmd, &status) != 0) {
+//      if (stat(startcmd, &status) != 0) {
+      if (0) {
         mylog(LOG_ERR, "Invalid start command: %s\n", startcmd);
         goto error;
       }
@@ -133,7 +134,8 @@ int main(int argc, char *argv[]) {
       break;
     case 'e':
       strcpy(endcmd, optarg);
-      if (stat(endcmd, &status) != 0) {
+//      if (stat(endcmd, &status) != 0) {
+      if (0) {
         mylog(LOG_ERR, "Invalid end command: %s\n", endcmd);
         goto error;
       }

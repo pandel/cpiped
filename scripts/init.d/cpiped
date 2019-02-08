@@ -15,7 +15,7 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="Audio capture to a pipe" # Introduce a short description here
 NAME=cpiped                    # Introduce the short server's name here
 DAEMON=/usr/local/bin/cpiped   # Introduce the server's location here
-DAEMON_ARGS="-D /path/to/FIFO" # Edit this!
+DAEMON_ARGS="-D /var/run/cpiped/audioin" # Edit this!
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
 
